@@ -4,7 +4,7 @@
 	<groupId>org.apache.accumulo</groupId>
 	<artifactId>accumulo-typo</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<name>typo</name>
 	<url>http://maven.apache.org</url>
 
@@ -36,7 +36,7 @@
 		<dependency>
 			<groupId>org.apache.accumulo</groupId>
 			<artifactId>accumulo-core</artifactId>
-			<version>1.4.1</version>
+			<version>1.4.2</version>
 		</dependency>
 	</dependencies>
 </project>
