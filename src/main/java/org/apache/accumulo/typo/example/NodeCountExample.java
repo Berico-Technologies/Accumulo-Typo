@@ -83,6 +83,7 @@ public class NodeCountExample extends Configured implements Tool {
     }
   }
 
+  @SuppressWarnings("unchecked")
   @Override
   public int run(String[] args) throws Exception {
 

@@ -46,6 +46,7 @@ public class Triple<A,B,C> implements Comparable<Triple<A,B,C>> {
     return "(" + first + "," + second + "," + third + ")";
   }
   
+  @SuppressWarnings("unchecked")
   @Override
   public int compareTo(Triple<A,B,C> o) {
     int cmp = ((Comparable<A>) first).compareTo(o.first);
@@ -59,6 +60,7 @@ public class Triple<A,B,C> implements Comparable<Triple<A,B,C>> {
     return cmp;
   }
   
+  @SuppressWarnings("unchecked")
   @Override
   public boolean equals(Object o) {
     if (o instanceof Triple) {

@@ -46,7 +46,8 @@ public class TripleLexicoderTest extends LexicoderTest {
     testData.add(new Triple<String,String,String>("", "", "c"));
     testData.add(new Triple<String,String,String>("", "", ""));
     
-    Triple<String,String,String>[] array = testData.toArray(new Triple[0]);
+    @SuppressWarnings("unchecked")
+	Triple<String,String,String>[] array = testData.toArray(new Triple[0]);
     
     assertSortOrder(tl, array);
     

@@ -30,6 +30,7 @@ import org.apache.accumulo.typo.encoders.util.FixedByteArrayOutputStream;
  */
 public class BigIntegerLexicoder implements Lexicoder<BigInteger> {
   
+  @SuppressWarnings("resource")
   @Override
   public byte[] encode(BigInteger v) {
     

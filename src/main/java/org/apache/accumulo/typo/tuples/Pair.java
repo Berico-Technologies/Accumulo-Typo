@@ -40,6 +40,7 @@ public class Pair<A,B> implements Comparable<Pair<A,B>> {
     return "(" + first + "," + second + ")";
   }
   
+  @SuppressWarnings("unchecked")
   @Override
   public int compareTo(Pair<A,B> o) {
     int cmp = ((Comparable<A>) first).compareTo(o.first);
@@ -50,6 +51,7 @@ public class Pair<A,B> implements Comparable<Pair<A,B>> {
     return cmp;
   }
   
+  @SuppressWarnings("unchecked")
   @Override
   public boolean equals(Object o) {
     if (o instanceof Pair) {

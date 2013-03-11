@@ -25,6 +25,7 @@ import org.apache.accumulo.typo.tuples.Pair;
  * 
  */
 public class PairLexicoderTest extends LexicoderTest {
+  @SuppressWarnings("unchecked")
   public void testSortOrder() {
     PairLexicoder<String,String> plexc = new PairLexicoder<String,String>(new StringLexicoder(), new StringLexicoder());
     
