@@ -7,6 +7,36 @@ in such a way that the lexicographic sort order corresponds to the object sort
 order.  Typo is not an ORM layer, its purpose is to make it easy to read and
 write Java objects to the Accumulo key fields and value that sort correctly.
 
+* Author:   Keith Turner (https://github.com/keith-turner)
+* License:  Apache 2.0
+
+### Usage Notes
+We are rolling Typo under our Fluent Accumulo - https://github.com/Berico-Technologies/Accumulo-Fluent project for type transformations.
+
+We offer a slightly modified version of Keith's original project via Nexus:
+
+```xml
+<repository>
+  <id>nexus.bericotechnologies.com</id>
+  <name>Berico Technologies Nexus</name>
+  <url>http://nexus.bericotechnologies.com/content/groups/public</url>
+  <releases><enabled>true</enabled></releases>
+  <snapshots><enabled>true</enabled></snapshots>
+</repository>
+```
+
+And you can refer to the dependency as:
+
+```xml
+<dependency>
+  <groupId>org.apache.accumulo</groupId>
+  <artifactId>accumulo-typo</artifactId>
+  <version>1.1.0</version>
+</dependency>
+```
+
+### Documentation
+
 Below is a simple example of reading and writing data to Accumulo using Typo.
 
 ```java
